@@ -1,0 +1,104 @@
+.app {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side {
+  width: 400px;
+  min-height: 830px;
+  background-color: #c0c0c0;
+  border-radius: 1%;
+}
+
+.my-img {
+  padding: 20px 20px 0 20px;
+  width: 300px;
+  height: 300px;
+  border-radius: 70%;
+}
+
+.name {
+  margin-top: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+hr {
+  margin: -30px auto 10px;
+  padding: 0;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+  width: 95%;
+}
+
+.social-net {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-net img {
+  width: 50px;
+  height: 50px;
+}
+
+.language h2 {
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+.language {
+  font-size: 18px;
+  text-align: center;
+}
+
+.skills h2 {
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+.skills {
+  font-size: 18px;
+  text-align: center;
+}
+
+.uk-en-page {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+.right-side {
+  min-height: 830px;
+}
+
+.about-me h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 32px;
+}
+.about-me {
+  padding: 100px 0 0 30px;
+}
+
+.education h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 32px;
+}
+
+.education {
+  padding: 100px 0 0 30px;
+}
+
+.work-exp h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 32px;
+}
+
+.work-exp {
+  padding: 100px 0 0 30px;
+}

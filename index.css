@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: rgba(139, 0, 0, 1);
+}
+
+a:hover {
+  background-color: rgba(255, 160, 122, 0.7);
+  border: 1px solid rgba(255, 160, 122, 0.7);
+  transition: 0.5s ease;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #bdb76b;
+}
+
+.main-page {
+  padding-top: 40px;
+  width: 500px;
+  min-height: 100vh;
+  background-color: #5f9ea0;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.homework-list {
+  padding-top: 35px;
+}
