@@ -1,55 +1,55 @@
-/* I have no repeating colors in my project, so I indicated the variable to follow my homework regulations, but in this case it is not needed */
 :root {
-  --color-grey: #c0c0c0;
-  --color-black: #1f1209;
-  --padding-for-text: 100px 0 0 30px;
+  --c-dark-grey: #333;
+  --c-black: #1f1209;
+  --c-grey: #c0c0c0;
+  --с-blue: #378BA4;
 }
 
 .app {
-  display: flex;
   flex-direction: row;
+  display: flex;
 }
 
 .left-side {
-  width: 400px;
+  background-color: var(--c-grey);
   min-height: 830px;
-  background-color: var(--color-grey);
   border-radius: 1%;
+  width: 400px;
 }
 
 .my-img {
   padding: 20px 20px 0 20px;
-  width: 300px;
-  height: 300px;
   border-radius: 70px;
+  height: 300px;
+  width: 300px;
 }
 
 .name {
+  text-align: center;
   margin-top: 20px;
   font-size: 28px;
-  text-align: center;
 }
 
 hr {
+  box-shadow: 0 20px 20px -20px var(--c-dark-grey);
+  border-bottom: 1px solid var(--c-black);
   margin: -30px auto 10px;
-  padding: 0;
-  height: 50px;
   border: none;
-  border-bottom: 1px solid var(--color-black);
-  box-shadow: 0 20px 20px -20px #333;
+  height: 50px;
+  padding: 0;
   width: 95%;
 }
 
 .social-net {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
+  flex-direction: row;
   margin-top: 20px;
+  display: flex;
 }
 
 .social-net img {
-  width: 50px;
   height: 50px;
+  width: 50px;
 }
 
 .language h2 {
@@ -58,14 +58,27 @@ hr {
 }
 
 .language {
-  font-size: 18px;
   text-align: center;
+  font-size: 18px;
 }
 
 .skills {
+  text-align: center;
   margin-top: 20px;
   font-size: 18px;
-  text-align: center;
+}
+
+a {
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: var(--c-black);
+}
+
+a:hover {
+  background-color: var(--с-blue);
+  border: 1px solid var(--c-blue);
+  transition: 0.5s ease;
+  border-radius: 5px;
 }
 
 .uk-en-page {
@@ -78,19 +91,12 @@ hr {
 }
 
 .right-side h2 {
+  /* padding-bottom: 10px; */
   text-align: center;
-  padding-bottom: 10px;
+  margin-top: 100px;
   font-size: 32px;
 }
 
-.about-me {
-  padding: var(--padding-for-text);
-}
-
-.education {
-  padding: var(--padding-for-text);
-}
-
-.work-exp {
-  padding: var(--padding-for-text);
+.my-text {
+  padding: 20px 0 0 30px;
 }
