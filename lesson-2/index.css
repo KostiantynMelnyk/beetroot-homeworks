@@ -1,3 +1,10 @@
+/* I have no repeating colors in my project, so I indicated the variable to follow my homework regulations, but in this case it is not needed */
+:root {
+  --color-grey: #c0c0c0;
+  --color-black: #1f1209;
+  --padding-for-text: 100px 0 0 30px;
+}
+
 .app {
   display: flex;
   flex-direction: row;
@@ -6,7 +13,7 @@
 .left-side {
   width: 400px;
   min-height: 830px;
-  background-color: #c0c0c0;
+  background-color: var(--color-grey);
   border-radius: 1%;
 }
 
@@ -14,7 +21,7 @@
   padding: 20px 20px 0 20px;
   width: 300px;
   height: 300px;
-  border-radius: 70%;
+  border-radius: 70px;
 }
 
 .name {
@@ -28,7 +35,7 @@ hr {
   padding: 0;
   height: 50px;
   border: none;
-  border-bottom: 1px solid #1f1209;
+  border-bottom: 1px solid var(--color-black);
   box-shadow: 0 20px 20px -20px #333;
   width: 95%;
 }
@@ -55,12 +62,8 @@ hr {
   text-align: center;
 }
 
-.skills h2 {
-  margin-top: 20px;
-  font-size: 26px;
-}
-
 .skills {
+  margin-top: 20px;
   font-size: 18px;
   text-align: center;
 }
@@ -74,31 +77,20 @@ hr {
   min-height: 830px;
 }
 
-.about-me h2 {
+.right-side h2 {
   text-align: center;
   padding-bottom: 10px;
   font-size: 32px;
-}
-.about-me {
-  padding: 100px 0 0 30px;
 }
 
-.education h2 {
-  text-align: center;
-  padding-bottom: 10px;
-  font-size: 32px;
+.about-me {
+  padding: var(--padding-for-text);
 }
 
 .education {
-  padding: 100px 0 0 30px;
-}
-
-.work-exp h2 {
-  text-align: center;
-  padding-bottom: 10px;
-  font-size: 32px;
+  padding: var(--padding-for-text);
 }
 
 .work-exp {
-  padding: 100px 0 0 30px;
+  padding: var(--padding-for-text);
 }
