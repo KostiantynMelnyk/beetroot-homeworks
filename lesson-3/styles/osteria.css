@@ -1,0 +1,96 @@
+.app {
+  background-color: var(--c-silver);
+}
+
+.link {
+  color: var(--c-charcoal);
+  text-decoration: none;
+}
+
+.head-2 {
+  font-size: var(--f-head);
+  padding: 20px 0 20px 0;
+}
+
+.horizontal-line {
+  box-shadow: 0 20px 20px -20px var(--c-black);
+  border-bottom: 1px solid var(--c-black);
+  margin: -30px auto 10px;
+  border: none;
+  height: 50px;
+  padding: 0;
+  width: 95%;
+}
+
+.header-wrapper {
+  text-align: center;
+  letter-spacing: 10px;
+  word-spacing: 25px;
+}
+
+.logo {
+  height: 100px;
+  width: 150px;
+}
+
+.main-text {
+  color: var(--c-black);
+  text-align: center;
+  margin-top: 40px;
+  font-size: 36px;
+}
+
+.home {
+  box-shadow: 0 20px 20px -20px var(--c-black);
+  background-color: var(--c-oslo-grey);
+  padding: 0 50px 50px 45px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 40px;
+  color: black;
+}
+
+.home-img {
+  padding: 20px 10px 20px 10px;
+  height: 300px;
+  width: 300px;
+}
+
+.review {
+  box-shadow: 0 20px 20px -20px var(--c-black);
+  box-shadow: 0 20px 20px -20px var(--c-black);
+  background-color: var(--c-oslo-grey);
+  margin: 40px 250px 0 250px;
+  color: var(--c-black);
+  padding-bottom: 50px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.location {
+  box-shadow: 0 20px 20px -20px var(--c-black);
+  background-color: var(--c-black-cow);
+  margin: 40px 250px 0 250px;
+  padding: 20px 0 30px 0;
+  color: var(--c-white);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.location-map {
+  margin: 15px 0 15px 15px;
+}
+
+.head-2-white {
+  font-size: var(--f-head);
+  padding: 15px 0 15px 0;
+  color: var(--c-white);
+  text-align: center;
+}
+
+.contacts {
+  text-align: center;
+  line-height: 2;
+  display: block;
+}

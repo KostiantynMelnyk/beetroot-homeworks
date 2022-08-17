@@ -1,0 +1,13 @@
+:root {
+  /* * Colors */
+  --c-moonstone-blue: #6CABB7;
+  --c-oslo-grey: #889293; 
+  --c-black-cow: #474745; 
+  --c-charcoal: #323A3A;
+  --c-silver: #C7C9C6; 
+  --c-white:#ffffff;
+  --c-black:#000000;
+  /* * Fonts */
+  --f-base: 14px;
+  --f-head: 36px;
+}

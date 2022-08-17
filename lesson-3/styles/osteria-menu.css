@@ -1,0 +1,82 @@
+.app {
+  background-color: var(--c-silver);
+}
+
+.logo {
+  height: 100px;
+  width: 150px;
+}
+
+.link {
+  color: var(--c-charcoal);
+  text-decoration: none;
+}
+
+.menu {
+  font-size: var(--f-head);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.horizontal-line{
+  box-shadow: 0 20px 20px -20px var(--c-black);
+  border-bottom: 1px solid var(--c-black);
+  margin: -30px auto 10px;
+  border: none;
+  height: 50px;
+  padding: 0;
+  width: 95%;
+}
+
+.menu-list {
+  text-align: center;
+  font-size: var(--f-base);
+  padding: 20px 0 20px 0;
+  margin: 50px 300px 0 300px;
+  line-height: 25px;
+  box-shadow: 0 20px 20px -20px var(--c-black);
+  border-bottom: 1px solid var(--c-black);
+  background-color: var(--c-black-cow);
+  border-radius: 10px;
+  list-style-type: none;
+}
+
+.recomendation {
+  text-align: center;
+  font-size: var(--f-base);
+  padding: 5px 0 5px 0;
+  margin: 20px 300px 0 300px;
+  line-height: 25px;
+  box-shadow: 0 20px 20px -20px var(--c-black);
+  border-bottom: 1px solid var(--c-black);
+  background-color: var(--c-black-cow);
+  border-radius: 10px;
+}
+
+.audio-menu {
+  text-align: center;
+  font-size: var(--f-base);
+  padding: 5px 0 5px 0;
+  margin: 20px 300px 0 300px;
+  box-shadow: 0 20px 20px -20px var(--c-black);
+  border-bottom: 1px solid var(--c-black);
+  background-color: var(--c-black-cow);
+  border-radius: 10px;
+}
+
+.review-video {
+  text-align: center;
+  font-size: var(--f-base);
+  padding: 10px 0 10px 0;
+  margin: 20px 300px 0 300px;
+  box-shadow: 0 20px 20px -20px var(--c-black);
+  border-bottom: 1px solid var(--c-black);
+  background-color: var(--c-black-cow);
+  border-radius: 10px;
+}
+
+.contacts {
+  text-align: center;
+  line-height: 2;
+  display: block;
+}
