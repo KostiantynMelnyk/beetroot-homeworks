@@ -1,9 +1,9 @@
 :root {
+  --p-c-outer-space: #2c3837;
+  --p-c-smoky-black: #15100A;
+  --p-c-oslo-grey: #889293;
   --p-c-black: #000000;
   --p-c-white: #ffffff;
-  --p-c-oslo-grey: #889293;
-  --p-c-smoky-black: #15100A;
-  --p-c-outer-space: #2c3837;
 }
 
 .p-panel{
@@ -13,8 +13,8 @@
 
 .p-link {
   border: 1px solid transparent;
-  text-decoration: none;
   color: var(--p-c-white);
+  text-decoration: none;
 }
 
 .p-link:hover {
