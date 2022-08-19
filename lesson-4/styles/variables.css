@@ -1,0 +1,9 @@
+:root {
+  /* Colors */
+  --c-silver: #828282;
+  --c-black: #000000;
+  --c-grey: #f6f6f6;
+  /* Fonts */
+  --f-base: 18px;
+  --f-head: 34px;
+}
