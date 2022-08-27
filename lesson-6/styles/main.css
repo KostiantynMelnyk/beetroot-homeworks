@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  color: var(--c-zeus);
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-zeus);
+  transition: var(--t-normal);
+  padding: 5px;
+}
+
+a:hover {
+  line-height: 1;
+  color: var(--c-orange);
+}
+
+.wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1230px;
+  margin: 0 auto;
+  width: 100%;
+}
+

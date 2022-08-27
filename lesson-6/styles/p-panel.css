@@ -1,0 +1,27 @@
+:root {
+  --p-c-outer-space: #2c3837;
+  --p-c-smoky-black: #15100A;
+  --p-c-oslo-grey: #889293;
+  --p-c-black: #000000;
+  --p-c-white: #ffffff;
+}
+
+.p-panel{
+  background-color: var(--p-c-smoky-black);
+  text-align: center;
+}
+
+.p-link {
+  border: 1px solid transparent;
+  color: var(--p-c-white);
+  text-decoration: none;
+}
+
+.p-link:hover {
+  background-color: var(--p-c-outer-space);
+  border: 1px solid var(--p-c-outer-space);
+  transition: 0.5s ease;
+  border-radius: 5px;
+}
+
+
