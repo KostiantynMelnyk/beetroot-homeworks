@@ -7,8 +7,10 @@
     --c-dark-blue: #173A56;/* + */
     --c-blue-light: #BCD0E5;
     /* fonts */
-    --f-base: 22px;
+    --f-standart: 16px;
     --f-small: 18px;
+    --f-head: 36px;
+    --f-base: 22px;
     --f-big: 44px;
     /* cubic bezier */
     --b-normal: cubic-bezier(0.4, 0, 0.2, 1);

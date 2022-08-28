@@ -4,10 +4,10 @@
 }
 
 .name {
+  font-size: var(--f-base);
   margin: 66px 0 0 135px;
   display: inline-block;
   color: var(--c-white);
-  font-size: 22px;
 }
 
 .down {

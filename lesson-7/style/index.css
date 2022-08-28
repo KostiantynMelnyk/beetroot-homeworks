@@ -1,0 +1,119 @@
+/* * {
+  border: 1px solid red;
+} */
+/* * Header */
+.header-wrapper {
+  background-color: var(--c-river-bed);
+  color: var(--c-geraldine);
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  display: flex;
+}
+
+.head {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.under-head {
+  margin-bottom: 12px;
+  margin-top: 5px;
+}
+/* * Content section */
+.content-wrapper {
+  background-color: var(--c-charcoal-grey);
+  font-size: var(--f-base);
+  justify-content: center;
+  color: var(--c-white);
+  user-select: none;
+  padding-top: 20px;
+  display: flex;
+}
+
+.content-list {
+  flex-direction: column;
+  max-width: 535px;
+  display: flex;
+  width: 100%;
+}
+
+.content-item {
+  border: 2px solid transparent;
+  flex-direction: row;
+  padding: 15px 12px;
+  display: flex;
+}
+
+.content-item:hover {
+  border: 2px solid var(--c-white);
+  background-color: var(--c-dolphin);
+  transition: var(--t-normal);
+}
+
+.point {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.main-point {
+  margin-left: 15px;
+}
+
+.additional-point {
+  font-size: var(--f-small);
+  margin-left: 5px;
+}
+
+.additional-point::before {
+  content: "(";
+}
+
+.additional-point::after {
+  content: ")";
+}
+
+.content-line{
+  background-color: var(--c-venus);
+}
+
+.content-line:nth-child(2n) {
+  background-color: var(--c-mobster);
+}
+/* * Checkbox */
+.box {
+  accent-color: var(--c-white);
+  height: 20px;
+  width: 20px;
+}
+
+.box:checked + .main-point {
+  text-decoration: line-through;
+  color: var(--c-river-bed);
+}
+
+.box:checked + .point {
+  text-decoration: line-through;
+  color: var(--c-river-bed);
+}
+/* * Footer */
+.footer-wrapper {
+  display: flex;
+  padding: 45px 120px;
+  justify-content: center;
+  background-color: var(--c-charcoal-grey);
+}
+
+.footer-button {
+  background-color: var(--c-river-bed);
+  border: 0px solid transparent;
+  color: var(--c-geraldine);
+  font-size: var(--f-base);
+  padding: 12px 215px;
+  cursor: pointer;
+}
+
+.footer-button:hover {
+  background-color: var(--c-dolphin);
+}

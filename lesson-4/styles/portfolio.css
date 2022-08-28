@@ -64,6 +64,6 @@
   padding-bottom: 30px;
 }
 
-.about-me-text :last-child {
+.about-me-text:last-child {
   padding-bottom: 100px;
 }

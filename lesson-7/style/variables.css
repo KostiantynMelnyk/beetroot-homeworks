@@ -1,0 +1,19 @@
+:root {
+  /* * Colors */
+  --c-charcoal-grey: #3B3F45;
+  --c-river-bed: #4A4F56;
+  --c-geraldine: #FF8984;
+  --c-mobster: #7A7593;
+  --c-dolphin: #625E77;
+  --c-white: #ffffff;
+  --c-venus: #88839E;
+  /* * Font size */
+  --f-standart: 16px;
+  --f-small: 11px;
+  --f-main: 24px;
+  --f-base: 18px;
+  /* * Font family */
+  --ff-roboto: 'Roboto', sans-serif;
+  /* * Transition */
+  --t-normal: all .1s ease-in;
+}

@@ -1,10 +1,10 @@
 /* * Header */
 .header-wrapper {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  display: flex;
   justify-content: space-between;
+  padding-bottom: 15px;
   align-items: center;
+  padding-top: 15px;
+  display: flex;
 }
 /* * Navigation */
 .navigation-list {
@@ -27,29 +27,29 @@
 
 .sign-in {
   margin-right: 30px;
-  background-color: var(--c-white);
   border: 1px solid var(--c-blue-light);
+  background-color: var(--c-white);
+  font-size: var(--f-standart);
   border-radius: 4px;
-  font-weight: 600;
-  font-size: 16px;
   line-height: 20px;
-  height: 46px;
+  font-weight: 600;
   padding: 0 20px;
   cursor: pointer;
+  height: 46px;
 }
 
 .sign-up {
   background-color: var(--c-orange);
-  color: var(--c-white);
+  font-size: var(--f-standart);
   transition: var(--t-normal);
-  border: none;
+  color: var(--c-white);
   border-radius: 4px;
-  font-weight: 600;
-  font-size: 16px;
   line-height: 20px;
-  height: 46px;
+  font-weight: 600;
   padding: 0 20px;
   cursor: pointer;
+  border: none;
+  height: 46px;
 }
 
 .sign-up:hover {
@@ -62,7 +62,7 @@
   /* justify-content: space-between; */
 }
 /* * Left side */
-.text-info{
+.text-info {
   max-width: 450px;
   margin-right: 70px;
 }
@@ -83,17 +83,17 @@
 
 .orange-button {
   background-color: var(--c-orange);
-  color: var(--c-white);
+  font-size: var(--f-standart);
   transition: var(--t-normal);
-  margin-top: 30px;
-  border: none;
+  color: var(--c-white);
   border-radius: 4px;
-  font-weight: 600;
-  font-size: 16px;
   line-height: 20px;
-  height: 46px;
+  font-weight: 600;
+  margin-top: 30px;
   padding: 0 20px;
   cursor: pointer;
+  border: none;
+  height: 46px;
 }
 
 .orange-button:hover {
@@ -101,46 +101,46 @@
 }
 /* * Second screen */
 .second-screen {
-  position: relative;
   padding-bottom: 75px;
+  position: relative;
 }
 
 .second-screen-background {
   position: absolute;
   bottom: 0;
-  left: 0;
   right: 0;
+  left: 0;
 }
 
 .second-screen-wrapper {
-  margin-top: 100px;
   position: relative;
+  margin-top: 100px;
   z-index: 1;
 }
 
 .h2 {
-  max-width: 450px;
-  font-size: 36px; /* var */
-  font-weight: 700;
-  line-height: 44px;
-  margin: 0 auto;
+  font-size: var(--f-head); /* var */
   text-align: center;
+  line-height: 44px;
+  font-weight: 700;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .icon {
-  width: 50px;
   height: 50px;
+  width: 50px;
 }
 
 .content {
-  display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  display: flex;
 }
 
 .info {
-  max-width: 240px;
   margin-right: 40px;
+  max-width: 240px;
 }
 
 .info:last-child {
@@ -148,35 +148,35 @@
 }
 
 .cards-name {
+  font-size: var(--f-base);
+  line-height: 26px;
   margin-top: 30px;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 26px;
 }
 
 .paragraph {
+  font-size: var(--f-standart);
+  line-height: 26px;
   margin-top: 16px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
 }
 
 .button {
-  display: flex;
   justify-content: center;
   margin-top: 70px;
+  display: flex;
 }
 /* * Footer */
 .footer {
-  margin-top: 100px;
-  border: 1px solid #BCD0E57F;
-  padding-top: 70px;
+  border: 1px solid #bcd0e57f;
   padding-bottom: 70px;
+  margin-top: 100px;
+  padding-top: 70px;
 }
 
 .footer-wrapper {
-  display: flex;
   justify-content: space-between;
+  display: flex;
 }
 
 .footer-item {
@@ -193,9 +193,9 @@
 }
 
 .h3 {
-  font-weight: 700;
-  font-size: 20px;
+  font-size: var(--f-base);
   line-height: 30px;
+  font-weight: 700;
 }
 
 .fill-wrapper {
@@ -205,10 +205,9 @@
 }
 
 .input {
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  margin-top: 25px;
   width: 340px;
   height: 50px;
-  margin-top: 25px;
-  border: 1px solid #BCD0E5;
-  border-radius: 4px;
 }
-
