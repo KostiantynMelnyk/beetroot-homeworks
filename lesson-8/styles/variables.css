@@ -1,0 +1,23 @@
+:root {
+	/* * Colors */
+	--c-light-grey: #808391;
+	--c-dark-grey: #414453;
+	--c-yellow: #ffce6d41;
+	--c-red: #ff545a6d;
+	/* *Circles sizes */
+  /* Big circle */
+  --circle-size-big: 200px;
+  /* Radius */
+  --cirle-radius: calc(var(--circle-size-big) / 2);
+
+  /* Circle size medium */
+  --circle-size-medium: calc(var(--circle-size-big) - 10%);
+
+  /* Circle size small */
+  --circle-size-small: calc(var(--circle-size-medium) - 10%);
+
+  /* *Circle positions */
+  --circle-position-medium: 13%;
+  --circle-position-small: calc(var(--circle-position-medium) / 2);
+
+}

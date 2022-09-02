@@ -1,0 +1,117 @@
+.app-wrapper {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--c-dark-grey);
+	display: flex;
+	justify-content: center;
+  position: relative;
+	align-items: center;
+}
+
+.content {
+	border: 1px solid orange;
+  justify-content: center;
+	align-items: center;
+  position: relative;
+  height: 600px;
+  display: flex;
+  width: 600px;
+}
+/* * Lines */
+.line {
+	transition: 3.35s cubic-bezier(0.4, 0, 0.2, 1);
+	width: calc(90% - var(--cirle-radius));
+	background-color: var(--c-light-grey);
+	position: absolute;
+  display: flex;
+  height: 6px;
+}
+
+.line-45 {
+  transform: rotate(45deg);
+}
+
+.line-90 {
+  transform: rotate(90deg);
+}
+
+.line-135 {
+  transform: rotate(135deg);
+}
+/* * Circles */
+/* Circle yellow */
+.circle-big {
+	transition: 3.35s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--c-yellow);
+  height: var(--circle-size-big);
+  width: var(--circle-size-big);
+  border-radius: 40%;
+  position: absolute;
+  z-index: 2;
+}
+
+.circle-big:hover {
+	transform: rotate(360deg);
+	cursor: pointer;
+}
+
+.line:hover {
+	transform: rotate(360deg);
+}
+
+/* Circle medium */
+.circle-medium{
+  height: var(--circle-size-medium);
+  width: var(--circle-size-medium);
+  background-color: var(--c-red);
+  border-radius: 50%;
+
+}
+.circle--medium-135-top{
+	left: var(--circle-position-medium);
+  top: var(--circle-position-medium);
+  position: absolute;
+}
+
+.circle--medium-45-top{
+	right: var(--circle-position-medium);
+  top: var(--circle-position-medium);
+  position: absolute;
+}
+
+.circle--medium-135-bottom{
+	bottom: var(--circle-position-medium);
+  right: var(--circle-position-medium);
+  position: absolute;
+}
+
+.circle--medium-45-bottom{
+	bottom: var(--circle-position-medium);
+  left: var(--circle-position-medium);
+  position: absolute;
+}
+/* Circle small */
+.circle-small{
+  height: var(--circle-size-small);
+  width: var(--circle-size-small);
+  background-color: var(--c-red);
+  border-radius: 50%;
+}
+
+.circle--small-top{
+  top: var(--circle-position-small);
+  position: absolute;
+}
+.circle--small-right{
+  right: var(--circle-position-small);
+  position: absolute;
+}
+.circle--small-bottom{
+  bottom:  var(--circle-position-small);
+  position: absolute;
+}
+.circle--small-left{
+  left: var(--circle-position-small);
+  position: absolute;
+}
+

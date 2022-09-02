@@ -21,11 +21,11 @@
   margin-right: 0px;
 }
 /* * Buttons */
-.header-buttons {
+.header-button {
   display: flex;
 }
 
-.sign-in {
+.header-first-button {
   margin-right: 30px;
   border: 1px solid var(--c-blue-light);
   background-color: var(--c-white);
@@ -38,49 +38,6 @@
   height: 46px;
 }
 
-.sign-up {
-  background-color: var(--c-orange);
-  font-size: var(--f-standart);
-  transition: var(--t-normal);
-  color: var(--c-white);
-  border-radius: 4px;
-  line-height: 20px;
-  font-weight: 600;
-  padding: 0 20px;
-  cursor: pointer;
-  border: none;
-  height: 46px;
-}
-
-.sign-up:hover {
-  opacity: 0.7;
-}
-/* * First screen */
-.first-wrapper {
-  margin-top: 70px;
-  display: flex;
-  /* justify-content: space-between; */
-}
-/* * Left side */
-.text-info {
-  max-width: 450px;
-  margin-right: 70px;
-}
-
-.h1 {
-  margin-top: 100px;
-  font-size: var(--f-big);
-  line-height: 50px;
-  font-weight: 700;
-}
-
-.sub-text {
-  margin-top: 30px;
-  font-size: var(--f-small);
-  line-height: 28px;
-  font-weight: 400;
-}
-
 .orange-button {
   background-color: var(--c-orange);
   font-size: var(--f-standart);
@@ -89,7 +46,6 @@
   border-radius: 4px;
   line-height: 20px;
   font-weight: 600;
-  margin-top: 30px;
   padding: 0 20px;
   cursor: pointer;
   border: none;
@@ -99,79 +55,135 @@
 .orange-button:hover {
   opacity: 0.7;
 }
+/* * First screen */
+.banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.banner-content {
+  max-width: 500px;
+  width: 100%;
+}
+
+.banner-item {
+  padding-bottom: 25px;
+}
+
+.banner-header {
+  font-size: var(--f-big);
+  line-height: 55px;
+}
+
+.banner-subheader {
+  font-size: var(--f-small);
+  line-height: 28px;
+}
+
+.banner-item:last-child {
+  padding-bottom: 0;
+}
+
+.banner-img {
+  display: flex;
+  max-width: 645px;
+  width: 100%;
+}
+
 /* * Second screen */
-.second-screen {
-  padding-bottom: 75px;
+.second-screen-wrapper{
+  padding-top: 100px;
+}
+
+.second-screen-header {
+  font-size: var(--f-head);
+  text-align: center;
+  max-width: 550px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.second-screen-content {
+  justify-content: space-between;
   position: relative;
+  padding-top: 50px;
+  display: flex;
+}
+
+.second-screen-card {
+  max-width: 270px;
+  width: 100%;
+}
+
+.card {
+  justify-content: center;
+  align-items: center;
+  max-height: 50px;
+  max-width: 50px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.card-item {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.purple-card {
+  background-color: var(--c-purple);
+  border-radius: 10px;
+}
+
+.orange-card {
+  background-color: var(--c-yellow);
+  border-radius: 10px;
+}
+
+.red-card {
+  background-color: var(--c-red);
+  border-radius: 10px;
+}
+
+.blue-card {
+  background-color: var(--c-blue);
+  border-radius: 10px;
+}
+
+.second-screen-name {
+  padding-top: 30px;
+}
+
+.second-screen-subname {
+  padding-top: 15px;
+} 
+
+.second-screen-footer {
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  display: flex;
 }
 
 .second-screen-background {
   position: absolute;
+  user-select: none;
+  z-index: -1;
   bottom: 0;
   right: 0;
   left: 0;
+  top: 0;
 }
 
-.second-screen-wrapper {
-  position: relative;
-  margin-top: 100px;
-  z-index: 1;
-}
-
-.h2 {
-  font-size: var(--f-head); /* var */
-  text-align: center;
-  line-height: 44px;
-  font-weight: 700;
-  max-width: 450px;
-  margin: 0 auto;
-}
-
-.icon {
-  height: 50px;
-  width: 50px;
-}
-
-.content {
-  justify-content: space-between;
-  margin-top: 50px;
-  display: flex;
-}
-
-.info {
-  margin-right: 40px;
-  max-width: 240px;
-}
-
-.info:last-child {
-  margin-right: 0;
-}
-
-.cards-name {
-  font-size: var(--f-base);
-  line-height: 26px;
-  margin-top: 30px;
-  font-weight: 600;
-}
-
-.paragraph {
-  font-size: var(--f-standart);
-  line-height: 26px;
-  margin-top: 16px;
-  font-weight: 500;
-}
-
-.button {
-  justify-content: center;
-  margin-top: 70px;
-  display: flex;
-}
 /* * Footer */
 .footer {
   border: 1px solid #bcd0e57f;
   padding-bottom: 70px;
-  margin-top: 100px;
-  padding-top: 70px;
+  margin-top: 60px;
+  padding-top: 170px;
 }
 
 .footer-wrapper {
@@ -208,6 +220,11 @@
   border: 1px solid #bcd0e5;
   border-radius: 4px;
   margin-top: 25px;
+  padding: 10px;
   width: 340px;
   height: 50px;
+}
+
+.footer-button {
+  margin-top: 25px;
 }
