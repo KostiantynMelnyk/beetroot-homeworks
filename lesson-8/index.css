@@ -1,62 +1,42 @@
+.app {
+  overflow: hidden;
+}
+
 .app-wrapper {
 	width: 100%;
-	min-height: 100vh;
+	height: 100vh;
 	background-color: var(--c-dark-grey);
 	display: flex;
 	justify-content: center;
   position: relative;
 	align-items: center;
+  padding: 50px 50px;
 }
 
-.content {
-	border: 1px solid orange;
+/* * Circles */
+.circles{
+  transition: all 10s ease-in-out;
   justify-content: center;
 	align-items: center;
   position: relative;
   height: 600px;
   display: flex;
   width: 600px;
+  overflow: hidden;
 }
-/* * Lines */
-.line {
-	transition: 3.35s cubic-bezier(0.4, 0, 0.2, 1);
-	width: calc(90% - var(--cirle-radius));
-	background-color: var(--c-light-grey);
-	position: absolute;
-  display: flex;
-  height: 6px;
-}
-
-.line-45 {
-  transform: rotate(45deg);
-}
-
-.line-90 {
-  transform: rotate(90deg);
-}
-
-.line-135 {
-  transform: rotate(135deg);
-}
-/* * Circles */
 /* Circle yellow */
 .circle-big {
 	transition: 3.35s cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--c-yellow);
   height: var(--circle-size-big);
   width: var(--circle-size-big);
-  border-radius: 40%;
+  border-radius: 50%;
   position: absolute;
-  z-index: 2;
+  z-index: 15;
 }
 
-.circle-big:hover {
-	transform: rotate(360deg);
-	cursor: pointer;
-}
-
-.line:hover {
-	transform: rotate(360deg);
+.circle-big:hover ~ .circles {
+  transform: rotate(3240deg);
 }
 
 /* Circle medium */
@@ -65,30 +45,52 @@
   width: var(--circle-size-medium);
   background-color: var(--c-red);
   border-radius: 50%;
-
-}
-.circle--medium-135-top{
-	left: var(--circle-position-medium);
-  top: var(--circle-position-medium);
   position: absolute;
+  z-index: 5;
+}
+
+.circle--medium-135-top {
+  transition: 1.35s cubic-bezier(0.4, 0, 0.2, 1);
+	left: 9.2%;
+  top: 9.2%;
+}
+
+.circle--medium-135-top:hover {
+  left: 18.2%;
+  top:18.2%;
 }
 
 .circle--medium-45-top{
-	right: var(--circle-position-medium);
-  top: var(--circle-position-medium);
-  position: absolute;
+  transition: 1.35s cubic-bezier(0.4, 0, 0.2, 1);
+	right: 9.2%;
+  top: 9.2%;
 }
 
-.circle--medium-135-bottom{
-	bottom: var(--circle-position-medium);
-  right: var(--circle-position-medium);
-  position: absolute;
+.circle--medium-45-top:hover {
+  top: 18.2%;
+  right: 18.2%;
 }
 
-.circle--medium-45-bottom{
-	bottom: var(--circle-position-medium);
-  left: var(--circle-position-medium);
-  position: absolute;
+.circle--medium-135-bottom {
+  transition: 1.35s cubic-bezier(0.4, 0, 0.2, 1);
+	bottom: 9.2%;
+  right: 9.2%;
+}
+
+.circle--medium-135-bottom:hover {
+  bottom: 18.2%;
+  right: 18.2%;
+}
+
+.circle--medium-45-bottom {
+  transition: 1.35s cubic-bezier(0.4, 0, 0.2, 1);
+	bottom: 9.2%;
+  left: 9.2%;
+}
+
+.circle--medium-45-bottom:hover {
+  bottom: 18.2%;
+  left: 18.2%;
 }
 /* Circle small */
 .circle-small{
@@ -96,22 +98,79 @@
   width: var(--circle-size-small);
   background-color: var(--c-red);
   border-radius: 50%;
+  position: absolute;
+  z-index: 5;
 }
 
 .circle--small-top{
-  top: var(--circle-position-small);
-  position: absolute;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  top: 4.5%;
+  left: calc(50% - (var(--circle-size-small) / 2));
 }
-.circle--small-right{
-  right: var(--circle-position-small);
-  position: absolute;
+
+.circle--small-top:hover {
+  top: 12.5%; 
 }
-.circle--small-bottom{
-  bottom:  var(--circle-position-small);
-  position: absolute;
+
+.circle--small-right {
+  transition: 1.35s cubic-bezier(0.4, 0, 0.2, 1);
+  top: calc(50% - (var(--circle-size-small) / 2));
+  right: 1%;
 }
-.circle--small-left{
-  left: var(--circle-position-small);
-  position: absolute;
+
+.circle--small-right:hover {
+  right: 12.5%;
 }
+
+
+.circle--small-bottom {
+  transition: 1.35s cubic-bezier(0.4, 0, 0.2, 1);
+  bottom: 4.5%;
+  left: calc(50% - (var(--circle-size-small) / 2));
+}
+
+.circle--small-bottom:hover {
+  bottom: 12.5%;
+}
+
+.circle--small-left {
+  transition: 1.35s cubic-bezier(0.4, 0, 0.2, 1);
+  top: calc(50% - (var(--circle-size-small) / 2));
+  left: 1%;
+}
+
+.circle--small-left:hover {
+  left: 12.5%;
+}
+/* * Lines */
+.line {
+	transition: 3.35s cubic-bezier(0.4, 0, 0.2, 1);
+	width: calc(100% - 33.5%);
+	background-color: var(--c-light-grey);
+	position: absolute;
+  display: flex;
+  height: 6px;
+}
+
+.line-45 {
+  transform: rotate(45deg);
+  width: var(--line-width-small);
+}
+
+.line-90 {
+  transform: rotate(90deg);
+  width: calc(100% - 50%);
+}
+
+.line-135 {
+  transform: rotate(135deg);
+  width: var(--line-width-small);
+  
+}
+
+.line-180 {
+  transform: rotate(180deg);
+  width: var(--line-width-big);
+}
+
 
