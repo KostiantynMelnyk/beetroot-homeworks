@@ -1,0 +1,26 @@
+:root {
+	/* * Colors */
+	--c-bright-cerulian: #18B5DC;
+	--c-cotton-seed: #BDBDBD;
+	--c-storm-dust: #646464;
+	--c-dark-white: #F6F6F6;
+	--c-baltic-sea: #282528;
+	--c-turquoise: #5DCBE6;
+	--c-iridium: #3C3C3C;
+	--c-white: #ffffff;
+	/* * Font size */
+	--f-navigation: 20px;
+	--f-small: 16px;
+	--f-head: 34px;
+	--f-logo: 40px;
+	--f-base: 18px;
+	/* * Font family */
+	--ff-train-one: 'Train One', sans-serif;
+	--ff-lato: 'Lato', sans-serif;
+	/* * Cubic bezier */
+	--cb-normal: cubic-bezier(0.4, 0, 0.2, 1);
+	/* * Transition */
+	--t-normal: 0.35s var(--cb-normal);
+	--t-long: 1s var(--cb-normal)
+
+}
