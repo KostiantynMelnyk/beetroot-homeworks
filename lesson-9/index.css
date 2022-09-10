@@ -212,6 +212,7 @@
 
 .card--footer {
 	transition: var(--t-normal);
+	pointer-events: all;
 	margin: 5px;
 }
 
