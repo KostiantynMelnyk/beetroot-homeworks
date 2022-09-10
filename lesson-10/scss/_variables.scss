@@ -1,0 +1,19 @@
+// * Colors 
+$c-white: #fff;
+$c-black: #000;
+
+// * Font size
+$fs-base: 14;
+$fs-big: 60;
+
+// * Font family
+$ff-base: 'Roboto', sans-serif;
+
+// * Bezier 
+$b-normal: cubic-bezier(.4,0,.2,1);
+
+// * Transition 
+$t-normal: .35s $b-normal;
+
+// * Box Shadow 
+$bs-normal: 1px 1px 5px rgba($c-black, .1);

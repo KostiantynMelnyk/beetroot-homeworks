@@ -1,0 +1,22 @@
+// * EM Generator - for automaticaly calculate from px to em
+@function em($px) {
+	@return $px / $fs-base + em;
+}
+
+// * Generate size - for automaticaly make square in px
+@mixin size($px) {
+	width: $px + px;
+	height: $px + px;
+}
+
+// * Flex - for automaticaly make flex defoult style
+@mixin flex($center: null) {
+	align-items: center;
+	display: flex;
+	@if $center {
+		justify-content: center;
+	}
+	@else {
+		justify-content: space-between;
+	}
+}
