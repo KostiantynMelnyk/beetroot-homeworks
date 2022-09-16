@@ -1,0 +1,5 @@
+mixin formItem(text, name, placeholder, type="text", classes='form__item')
+  .form__content 
+    span.form__text=text
+  label.form__input 
+    input(name=name, type=type, class=classes, placeholder=placeholder)

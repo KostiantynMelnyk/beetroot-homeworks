@@ -1,0 +1,22 @@
+mixin sign-up()
+  .form__sign-up
+    header.form__title Create an Account
+    .form__small
+      +formItem('First Name', 'user-name', 'Write your name')
+      +formItem('Last Name', 'user-name', 'Write your surname')
+    +formItem('E-mail', 'e-mail', 'Write your email adress', 'email')
+    .form__alarm 
+      span Please check again
+    .form__note 
+      span We'll never share your email with anyone else.
+    .form__gender 
+      label.form__item--radio 
+        input(type="radio" name="gender" value="Male")
+        span Male
+      label.form__item--radio 
+        input(type="radio" name="gender" value="Female")
+        span Female
+    .form__small
+      +formSelect()
+      +formItem('City', 'city')
+

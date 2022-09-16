@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* border: 1px solid red; */
 }
 
 h1,
@@ -15,8 +16,8 @@ h6 {
 }
 
 body {
-  font-family: $ff-base;
   font-size: $fs-base + px;
+  font-family: $ff-base;
 }
 
 img {

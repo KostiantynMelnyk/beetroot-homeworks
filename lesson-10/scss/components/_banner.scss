@@ -1,0 +1,154 @@
+.banner {
+  &__wrapper {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__left {
+    border-right: 1px solid $c-gold;
+    display: flex;
+    padding: 65px;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 430px;
+    display: flex;
+    padding: 15px;
+    width: 100%;
+  }
+
+  &__photo {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  &__top--left {
+    border-left: 1px solid $c-gold;
+    border-top: 1px solid $c-gold;
+    position: absolute;
+    max-height: 100px;
+    max-width: 100px;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  &__top--right {
+    border-right: 1px solid $c-gold;
+    border-top: 1px solid $c-gold;
+    position: absolute;
+    max-height: 100px;
+    max-width: 100px;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+  }
+
+  &__bottom--left {
+    border-bottom: 1px solid $c-gold;
+    border-left: 1px solid $c-gold;
+    position: absolute;
+    max-height: 100px;
+    max-width: 100px;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__bottom--right {
+    border-bottom: 1px solid $c-gold;
+    border-right: 1px solid $c-gold;
+    position: absolute;
+    max-height: 100px;
+    max-width: 100px;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__info {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 65px;
+  }
+
+  &__title {
+    color: $c-dark-grey;
+    line-height: 42px;
+    font-weight: 900;
+    font-size: em(36);
+  }
+
+  &__devider {
+    border-bottom: 1px solid $c-gold;
+    padding-top: 30px;
+    max-width: 100px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__subtitle {
+    font-family: $ff-raleway;
+    color: $c-dark-grey;
+    line-height: 30px;
+    font-size: em(24);
+    padding-top: 30px;
+    font-weight: 400;
+  }
+
+  &__social {
+    padding-top: 30px;  
+    display: flex;
+  }
+
+
+  &__link {
+    border:1px solid $c-grey;
+    justify-content: center;
+    transition: $t-normal;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: flex;
+    height: 30px;
+    width: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      border-color: $c-gold;
+    }
+  }
+
+  &__about-me {
+    font-family: $ff-raleway;
+    padding-top: 50px;
+    max-width: 430px;
+    font-weight: 500;
+    width: 100%;
+
+  }
+
+  &__devider--bottom {
+    border-bottom: 1px dashed $c-gold;
+    padding-top: 30px;
+    max-width: 50px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__button {
+    padding-top: 30px;
+  }
+}
